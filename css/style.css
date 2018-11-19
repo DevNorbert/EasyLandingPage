@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.btn-big {
+body .btn-big {
   background-color: #fed136;
   color: #fff;
   font-size: 18px;
@@ -14,17 +14,24 @@ body {
   padding: 20px 50px;
 }
 
-.section-title, .services .services-text h2 {
+body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2 {
   color: #222222;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.section-subtitle, .services .services-text p {
+body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p {
   color: #777777;
   font-size: 16px;
   font-style: italic;
+}
+
+body .item-title, body .services .services-items .services-item h4, .services .services-items .services-item body h4, body .portfolio .portfolio-items .portfolio-item .portfolio-box h4, .portfolio .portfolio-items .portfolio-item .portfolio-box body h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Header */
@@ -92,7 +99,6 @@ body {
 .services {
   background-color: #fff;
   padding: 100px 0;
-  width: 100%;
 }
 
 .services .services-items {
@@ -110,10 +116,6 @@ body {
 }
 
 .services .services-items .services-item h4 {
-  color: #222222;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -122,6 +124,43 @@ body {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.portfolio .portfolio-items {
+  margin: 80px 0;
+}
+
+.portfolio .portfolio-items .portfolio-item .portfolio-image {
+  width: 100%;
+}
+
+.portfolio .portfolio-items .portfolio-item .portfolio-image img {
+  width: 100%;
+}
+
+.portfolio .portfolio-items .portfolio-item .portfolio-box {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+}
+
+.portfolio .portfolio-items .portfolio-item .portfolio-box h4 {
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.portfolio .portfolio-items .portfolio-item .portfolio-box p {
+  color: #737373;
+  font-family: 'Droid Serif', sans-serif;
+  font-size: 14px;
+  font-style: italic;
   text-align: center;
 }
 
