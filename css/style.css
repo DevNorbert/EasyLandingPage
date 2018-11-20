@@ -14,18 +14,18 @@ body .btn-big {
   padding: 20px 50px;
 }
 
-body .section-padding, body .services, body .portfolio, body .about-us {
+body .section-padding, body .services, body .portfolio, body .about-us, body .team {
   padding: 100px 0;
 }
 
-body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2, body .about-us .about-text h2, .about-us .about-text body h2 {
+body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2, body .about-us .about-text h2, .about-us .about-text body h2, body .team .team-text h2, .team .team-text body h2 {
   color: #222222;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p, body .about-us .about-text p, .about-us .about-text body p {
+body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p, body .about-us .about-text p, .about-us .about-text body p, body .team .team-text p, .team .team-text body p {
   color: #777777;
   font-size: 16px;
   font-style: italic;
@@ -230,6 +230,57 @@ body .paragraph, body .services .services-items .services-item p, .services .ser
 
 .about-us .about-timeline .timeline-margin {
   margin-top: 100px;
+}
+
+/* Team */
+.team {
+  background-color: #f7f7f7;
+}
+
+.team .team-items {
+  padding: 70px 0;
+}
+
+.team .team-items .team-item {
+  text-align: center;
+}
+
+.team .team-items .team-item .team-image {
+  display: inline-block;
+  background-color: black;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.team .team-items .team-item h5 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team .team-items .team-item p {
+  color: #737373;
+  font-family: 'Droid Serif', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.team .team-items .team-item .team-icon {
+  width: 41px;
+  height: 41px;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 10px 5px;
+  margin: 5px;
+}
+
+.team .team-items .team-bottom p {
+  padding-top: 50px;
+  color: #777777;
 }
 
 /*# sourceMappingURL=style.css.map */

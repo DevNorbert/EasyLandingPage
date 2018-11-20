@@ -265,9 +265,11 @@ body {
 
         .timeline-image {
             text-align: center;
+
             img {
                 width: 169px;
             }
+
             .timeline-end {
                 display: inline-block;
                 width: 169px;
@@ -275,6 +277,7 @@ body {
                 background-color: $yellow;
                 border-radius: 50%;
                 border: 7px solid $greyborder;
+
                 h4 {
                     color: $white;
                     font-size: 18px;
@@ -286,6 +289,67 @@ body {
 
         .timeline-margin {
             margin-top: 100px;
+        }
+    }
+}
+
+/* Team */
+.team {
+    background-color: $greylight;
+    @extend .section-padding;
+
+    .team-text {
+        h2 {
+            @extend .section-title;
+        }
+
+        p {
+            @extend .section-subtitle;
+        }
+    }
+
+    .team-items {
+        padding: 70px 0;
+
+        .team-item {
+            text-align: center;
+
+            .team-image {
+                display: inline-block;
+                background-color: black;
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+            }
+
+            h5 {
+                color: $dark;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            p {
+                color: $greymedium;
+                font-family: 'Droid Serif', sans-serif;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .team-icon {
+                width: 41px;
+                height: 41px;
+                font-size: 20px;
+                border: 3px solid black;
+                border-radius: 50%;
+                padding: 10px 5px;
+                margin: 5px;
+            }
+        }
+        .team-bottom p {
+            padding-top: 50px;
+            color: $grey;
         }
     }
 }
