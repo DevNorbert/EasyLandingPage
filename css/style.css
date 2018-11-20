@@ -25,7 +25,7 @@ body .section-title, body .services .services-text h2, .services .services-text 
   text-transform: uppercase;
 }
 
-body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p, body .about-us .about-text p, .about-us .about-text body p, body .team .team-text p, .team .team-text body p {
+body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p, body .about-us .about-text p, .about-us .about-text body p, body .team .team-text p, .team .team-text body p, body .contact .contact-text p, .contact .contact-text body p {
   color: #777777;
   font-size: 16px;
   font-style: italic;
@@ -281,6 +281,131 @@ body .paragraph, body .services .services-items .services-item p, .services .ser
 .team .team-items .team-bottom p {
   padding-top: 50px;
   color: #777777;
+}
+
+/* Clients */
+.clients {
+  padding: 50px 0;
+}
+
+/* Contact */
+.contact {
+  background-color: #222222;
+  /* Form */
+}
+
+.contact .contact-map {
+  background-image: url("../images/contact-map.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 53%;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-text {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.contact .contact-text h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact .form-group .form-control {
+  padding: 25px;
+  margin: 30px 0;
+  font-weight: 700;
+  color: #737373;
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+}
+
+.footer p {
+  font-weight: 500;
+}
+
+.footer .footer-icons {
+  text-align: center;
+}
+
+.footer .footer-icons .footer-icon {
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  width: 41px;
+  height: 41px;
+  padding: 10px 5px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* About Us */
+  .about-us .about-timeline .timeline-line {
+    height: 150%;
+  }
+  .about-us .about-timeline .timeline-right p,
+  .about-us .about-timeline .timeline-left p {
+    font-size: 13px !important;
+  }
+  /* Team */
+  .team .team-items .team-item {
+    margin: 30px 0;
+  }
+  /* Client */
+  .client-item {
+    margin: 20px 0;
+    text-align: center;
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Body */
+  body .btn-big {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+  /* Header */
+  .header .header-overlay .header-content .header-text {
+    margin-top: 150px;
+  }
+  .header .header-overlay .header-content .header-text h1 {
+    font-size: 42px;
+  }
+  .header .header-overlay .header-content .header-text h2 {
+    font-size: 28px;
+  }
+  /* About Us */
+  .timeline-line {
+    display: none;
+  }
+  .about-us .about-timeline .timeline-image img {
+    width: 99px;
+  }
+  /* Team */
+  .team .team-items .team-item {
+    margin: 30px 0;
+  }
+  /* Client */
+  .client-item {
+    margin: 20px 0;
+    text-align: center;
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
