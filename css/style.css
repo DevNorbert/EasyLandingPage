@@ -14,18 +14,18 @@ body .btn-big {
   padding: 20px 50px;
 }
 
-body .section-padding, body .services, body .portfolio {
+body .section-padding, body .services, body .portfolio, body .about-us {
   padding: 100px 0;
 }
 
-body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2 {
+body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2, body .about-us .about-text h2, .about-us .about-text body h2 {
   color: #222222;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p {
+body .section-subtitle, body .services .services-text p, .services .services-text body p, body .portfolio p, .portfolio body p, body .about-us .about-text p, .about-us .about-text body p {
   color: #777777;
   font-size: 16px;
   font-style: italic;
@@ -36,6 +36,13 @@ body .item-title, body .services .services-items .services-item h4, .services .s
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+body .paragraph, body .services .services-items .services-item p, .services .services-items .services-item body p, body .about-us .about-timeline .timeline-left p, .about-us .about-timeline .timeline-left body p, body .about-us .about-timeline .timeline-right p, .about-us .about-timeline .timeline-right body p {
+  color: #777777;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* Header */
@@ -123,10 +130,6 @@ body .item-title, body .services .services-items .services-item h4, .services .s
 }
 
 .services .services-items .services-item p {
-  color: #777777;
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -164,6 +167,69 @@ body .item-title, body .services .services-items .services-item h4, .services .s
   font-size: 14px;
   font-style: italic;
   text-align: center;
+}
+
+/* About Us */
+.about-us .about-timeline {
+  padding: 70px 0;
+}
+
+.about-us .about-timeline .timeline-line {
+  border-left: 2px solid #f1f1f1;
+  height: 123%;
+  width: 0;
+  position: absolute;
+  margin: 0 auto;
+  left: 195px;
+  right: 169px;
+}
+
+.about-us .about-timeline .timeline-left {
+  text-align: right;
+}
+
+.about-us .about-timeline .timeline-left h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-us .about-timeline .timeline-right {
+  text-align: left;
+}
+
+.about-us .about-timeline .timeline-right h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-us .about-timeline .timeline-image {
+  text-align: center;
+}
+
+.about-us .about-timeline .timeline-image img {
+  width: 169px;
+}
+
+.about-us .about-timeline .timeline-image .timeline-end {
+  display: inline-block;
+  width: 169px;
+  height: 169px;
+  background-color: #fed136;
+  border-radius: 50%;
+  border: 7px solid #f1f1f1;
+}
+
+.about-us .about-timeline .timeline-image .timeline-end h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 25px 0;
+}
+
+.about-us .about-timeline .timeline-margin {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

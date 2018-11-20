@@ -6,6 +6,7 @@ $dark: #222222;
 $grey: #777777;
 $greylight: #f7f7f7;
 $greymedium: #737373;
+$greyborder: #f1f1f1;
 
 /* Body */
 body {
@@ -19,9 +20,11 @@ body {
         font-weight: 700;
         padding: 20px 50px;
     }
+
     .section-padding {
         padding: 100px 0;
     }
+
     .section-title {
         color: $dark;
         font-size: 40px;
@@ -40,6 +43,13 @@ body {
         font-size: 18px;
         font-weight: 700;
         text-align: center;
+    }
+
+    .paragraph {
+        color: $grey;
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
     }
 }
 
@@ -143,10 +153,7 @@ body {
             }
 
             p {
-                color: $grey;
-                font-family: 'Roboto Slab', sans-serif;
-                font-size: 14px;
-                font-weight: 400;
+                @extend .paragraph;
                 text-align: center;
             }
         }
@@ -197,6 +204,88 @@ body {
                     text-align: center;
                 }
             }
+        }
+    }
+}
+
+/* About Us */
+.about-us {
+    @extend .section-padding;
+
+    .about-text {
+        h2 {
+            @extend .section-title;
+        }
+
+        p {
+            @extend .section-subtitle;
+        }
+    }
+
+    .about-timeline {
+        padding: 70px 0;
+
+        .timeline-line {
+            border-left: 2px solid #f1f1f1;
+            height: 123%;
+            width: 0;
+            position: absolute;
+            margin: 0 auto;
+            left: 195px;
+            right: 169px;
+        }
+
+        .timeline-left {
+            text-align: right;
+
+            h4 {
+                color: $dark;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            p {
+                @extend .paragraph;
+            }
+        }
+
+        .timeline-right {
+            text-align: left;
+
+            h4 {
+                color: $dark;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            p {
+                @extend .paragraph;
+            }
+        }
+
+        .timeline-image {
+            text-align: center;
+            img {
+                width: 169px;
+            }
+            .timeline-end {
+                display: inline-block;
+                width: 169px;
+                height: 169px;
+                background-color: $yellow;
+                border-radius: 50%;
+                border: 7px solid $greyborder;
+                h4 {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 25px 0;
+                }
+            }
+        }
+
+        .timeline-margin {
+            margin-top: 100px;
         }
     }
 }
