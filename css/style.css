@@ -14,6 +14,10 @@ body .btn-big {
   padding: 20px 50px;
 }
 
+body .section-padding, body .services, body .portfolio {
+  padding: 100px 0;
+}
+
 body .section-title, body .services .services-text h2, .services .services-text body h2, body .portfolio h2, .portfolio body h2 {
   color: #222222;
   font-size: 40px;
@@ -98,7 +102,6 @@ body .item-title, body .services .services-items .services-item h4, .services .s
 /* Services */
 .services {
   background-color: #fff;
-  padding: 100px 0;
 }
 
 .services .services-items {
@@ -130,7 +133,6 @@ body .item-title, body .services .services-items .services-item h4, .services .s
 /* Portfolio */
 .portfolio {
   background-color: #f7f7f7;
-  padding: 100px 0;
 }
 
 .portfolio .portfolio-items {
