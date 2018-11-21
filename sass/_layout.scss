@@ -314,12 +314,13 @@ body {
         .team-item {
             text-align: center;
 
-            .team-image {
+            .team-image img {
                 display: inline-block;
-                background-color: black;
                 width: 220px;
                 height: 220px;
                 border-radius: 50%;
+                border: 6px solid $white;
+                object-fit: cover;
             }
 
             h5 {
