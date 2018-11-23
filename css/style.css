@@ -138,8 +138,8 @@ body .paragraph, body .services .services-items .services-item p, .services .ser
   background-color: #f7f7f7;
 }
 
-.portfolio .portfolio-items {
-  margin: 80px 0;
+.portfolio .portfolio-items .portfolio-item {
+  margin: 30px 0;
 }
 
 .portfolio .portfolio-items .portfolio-item .portfolio-image {
@@ -148,6 +148,8 @@ body .paragraph, body .services .services-items .services-item p, .services .ser
 
 .portfolio .portfolio-items .portfolio-item .portfolio-image img {
   width: 100%;
+  object-fit: cover;
+  height: 380px;
 }
 
 .portfolio .portfolio-items .portfolio-item .portfolio-box {

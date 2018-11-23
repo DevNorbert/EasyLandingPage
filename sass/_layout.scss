@@ -173,36 +173,36 @@ body {
         @extend .section-subtitle;
     }
 
-    .portfolio-items {
-        margin: 80px 0;
+    .portfolio-items .portfolio-item {
+        margin: 30px 0;
 
-        .portfolio-item {
-            .portfolio-image {
+        .portfolio-image {
+            width: 100%;
+
+            img {
                 width: 100%;
+                object-fit: cover;
+                height: 380px;
+            }
+        }
 
-                img {
-                    width: 100%;
-                }
+        .portfolio-box {
+            background-color: $white;
+            height: 100px;
+            width: 100%;
+
+            h4 {
+                @extend .item-title;
+                margin-top: 0;
+                padding-top: 15px;
             }
 
-            .portfolio-box {
-                background-color: $white;
-                height: 100px;
-                width: 100%;
-
-                h4 {
-                    @extend .item-title;
-                    margin-top: 0;
-                    padding-top: 15px;
-                }
-
-                p {
-                    color: $greymedium;
-                    font-family: 'Droid Serif', sans-serif;
-                    font-size: 14px;
-                    font-style: italic;
-                    text-align: center;
-                }
+            p {
+                color: $greymedium;
+                font-family: 'Droid Serif', sans-serif;
+                font-size: 14px;
+                font-style: italic;
+                text-align: center;
             }
         }
     }
@@ -389,6 +389,7 @@ body {
             @extend .section-subtitle;
         }
     }
+
     /* Form */
     .form-group .form-control {
         padding: 25px;
@@ -397,14 +398,18 @@ body {
         color: $greymedium;
     }
 }
+
 /* Footer */
 .footer {
     padding: 40px;
+
     p {
         font-weight: 500;
     }
+
     .footer-icons {
         text-align: center;
+
         .footer-icon {
             background-color: black;
             color: $white;
